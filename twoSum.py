@@ -1,6 +1,8 @@
 def two_sum(lst, k):
     seen = {}
     for num in lst:
+        #print(seen)
+        #print(k-num)
         if k - num in seen:
             return True
         seen[num] = True
